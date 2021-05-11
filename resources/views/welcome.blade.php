@@ -59,7 +59,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Put in Gram how many you need</h5>
                                 <input type="text" class="form-control bg-secondary text-center text-white mb-2" placeholder="10.50">
-                                <a href="javascript:0" class="btn btn-primary">Add</a>
+                                <a href="javascript:0" class="btn btn-primary add-btn">Add {{ $item->name }}</a>
                             </div>
                             <div class="card-footer text-muted">
                                 Rest of  {{ $item->name }} : {{ gramToKiloGram($item->quantity) }}
@@ -69,9 +69,10 @@
                 @endforeach
                 <div class="col-md-6 col-lg-6 mb-12">
                 <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
                         <input class="form-control bg-secondary text-white text-center" id="name" type="number" placeholder="Number of persons" required="required" data-validation-required-message="Please enter your name." />
                         <p class="help-block text-danger"></p>
+                        <a href="javascript:0" class="btn btn-danger make-btn ">Make it</a>
                     </div>
                 </div>
                  </div>
